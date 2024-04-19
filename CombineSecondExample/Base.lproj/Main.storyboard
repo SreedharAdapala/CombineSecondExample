@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0f9-QQ-NP9">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mZw-wO-gNU">
+            <objects>
+                <viewController id="0f9-QQ-NP9" customClass="ViewController" customModule="CombinePractise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X7R-wn-tMr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPg-Hf-Y4S">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nww-bi-fgh">
+                                        <rect key="frame" x="16" y="16" width="361" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="pmx-Ci-FNc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXq-BC-35l">
+                                        <rect key="frame" x="16" y="53" width="361" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="9pl-cU-po0"/>
+                                        </constraints>
+                                        <state key="normal" title="Tap Me To Chnage The Label Text">
+                                            <color key="titleColor" red="1" green="0.034869695639999997" blue="0.059189605280000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionButtonTapped:" destination="0f9-QQ-NP9" eventType="touchUpInside" id="Df4-SY-iDB"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Combine Framework in Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftb-ex-xYs">
+                                        <rect key="frame" x="59" y="350" width="296" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstItem="Nww-bi-fgh" firstAttribute="leading" secondItem="gPg-Hf-Y4S" secondAttribute="leading" constant="16" id="76N-gM-mUf"/>
+                                    <constraint firstItem="Nww-bi-fgh" firstAttribute="top" secondItem="gPg-Hf-Y4S" secondAttribute="top" constant="16" id="E2G-LJ-WXN"/>
+                                    <constraint firstAttribute="trailing" secondItem="aXq-BC-35l" secondAttribute="trailing" constant="16" id="Oab-kT-e9V"/>
+                                    <constraint firstItem="aXq-BC-35l" firstAttribute="top" secondItem="Nww-bi-fgh" secondAttribute="bottom" constant="16" id="gZf-oF-Xwb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nww-bi-fgh" secondAttribute="trailing" constant="16" id="uVZ-m5-t2C"/>
+                                    <constraint firstItem="aXq-BC-35l" firstAttribute="leading" secondItem="gPg-Hf-Y4S" secondAttribute="leading" constant="16" id="vP1-Z6-lHR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GkP-JZ-gNh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gPg-Hf-Y4S" firstAttribute="top" secondItem="GkP-JZ-gNh" secondAttribute="top" id="2WU-Qt-DLw"/>
+                            <constraint firstItem="gPg-Hf-Y4S" firstAttribute="leading" secondItem="GkP-JZ-gNh" secondAttribute="leading" id="FN9-rb-HBb"/>
+                            <constraint firstItem="GkP-JZ-gNh" firstAttribute="trailing" secondItem="gPg-Hf-Y4S" secondAttribute="trailing" id="oAj-xW-kNO"/>
+                            <constraint firstItem="GkP-JZ-gNh" firstAttribute="bottom" secondItem="gPg-Hf-Y4S" secondAttribute="bottom" id="owc-pr-VAY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelAssignSubscriber" destination="Nww-bi-fgh" id="FDk-rA-xTl"/>
+                        <outlet property="tapButton" destination="aXq-BC-35l" id="lfg-td-px5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQI-uD-25V" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
